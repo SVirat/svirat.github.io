@@ -177,7 +177,8 @@ body {
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 body#bg-img {
   /*background: url(../img/moon.jpg); */
   background-attachment: fixed;
@@ -241,8 +242,12 @@ header {
 }
 
 main {
-  padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
+  min-height: calc(100vh - 60px); 
+}
 main .icons {
   align-content: center;
   text-align: center;
@@ -788,6 +793,8 @@ select{
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  main {
+    padding: 4rem; }
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .container {
@@ -810,11 +817,11 @@ select{
   }
 }
 
-
 @media screen and (min-width: 501px) and (max-width: 768px) {
   main {
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    padding: 4rem; }
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem; }
@@ -873,7 +880,8 @@ select{
 @media screen and (min-width: 377px) and (max-width: 500px) {
   main {
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    padding: 4rem; }
   main#home h1 {
     margin-top: 20vh; 
     font-size: 3rem;
@@ -935,7 +943,8 @@ select{
 @media screen and (max-width: 376px) {
   main {
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    padding: 4rem; }
   main .sm-heading {
     font-size: 1rem;
   }
