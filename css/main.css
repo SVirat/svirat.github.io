@@ -123,7 +123,6 @@
 .menu-branding .portrait {
   width: 240px;
   height: 250px;
-  background: url("../img/linkedindp.jpg");
   border-radius: 35%;
   border: solid 3px var(--main-bg-color); }
 .menu .nav-item {
@@ -180,9 +179,9 @@ body {
   line-height: 1.5;
 }
 body#bg-img {
-  /*background: url(../img/moon.jpg); */
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover; 
+}
 body#bg-img:after {
   content: '';
   position: absolute;
@@ -191,9 +190,22 @@ body#bg-img:after {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/GraduationPic.jpg); /* HOME COLOR */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	animation: gradient 15s ease infinite;
   background-attachment: fixed;
-  background-size: cover; } 
+  background-size: 200% 200%; 
+} 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 h1, h2, h3 {
   margin: 0;
@@ -811,9 +823,7 @@ select{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/linkedindp-tablets.jpg); /* HOME COLOR */
     background-attachment: scroll;
-    background-size: cover; 
   }
 }
 
@@ -844,7 +854,6 @@ select{
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
   .menu-branding .portrait {
-    background: url("../img/linkedindpSmall.jpg");
     width: 150px;
     height: 150px; }
   .about-info {
@@ -858,9 +867,7 @@ select{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/linkedindp-tablets.jpg); /* HOME COLOR */
     background-attachment: scroll;
-    background-size: cover; 
   }
   .education {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
@@ -894,7 +901,6 @@ select{
     width: 100%;
     min-height: 0; }
   .menu-branding .portrait {
-    background: url("../img/linkedindp-small.jpg");
     width: 150px;
     height: 150px; }
   .about-info {
@@ -908,9 +914,7 @@ select{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/linkedindp.jpg); /* HOME COLOR */
     background-attachment: scroll;
-    background-size: cover; 
   }
   .education {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
@@ -957,7 +961,6 @@ select{
     width: 100%;
     min-height: 0; }
   .menu-branding .portrait {
-    background: url("../img/linkedindpSmall.jpg");
     width: 150px;
     height: 150px; }
   .about-info {
@@ -971,9 +974,7 @@ select{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/linkedindp-small.jpg); /* HOME COLOR */
     background-attachment: scroll;
-    background-size: cover; 
   }
   .education {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
