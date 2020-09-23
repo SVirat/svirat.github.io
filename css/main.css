@@ -796,13 +796,11 @@ select{
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); 
-    margin-right: 4%;
    }
   .container {
     grid-template-columns: repeat(4, 1fr); }
   .experience {
     grid-template-columns: repeat(4, 1fr);
-    margin-right: 4%;
    }
   .skills {
     grid-template-columns: repeat(3, 1fr); }
